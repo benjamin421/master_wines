@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wines",
+  "info": {
+    "name": "wines"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "short_description": {
+      "type": "text",
+      "required": true
+    },
+    "long_description": {
+      "type": "text",
+      "required": true
+    },
+    "wine_making": {
+      "type": "text",
+      "required": true
+    },
+    "tasting_food_notes": {
+      "type": "text"
+    },
+    "fact_sheet": {
+      "type": "text"
+    },
+    "shelf_talkers": {
+      "type": "text"
+    },
+    "UPC": {
+      "type": "string"
+    },
+    "link_to_buy": {
+      "type": "string"
+    },
+    "wines_brand": {
+      "model": "wines-brands",
+      "via": "wines"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

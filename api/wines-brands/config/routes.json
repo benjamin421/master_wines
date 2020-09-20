@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wines-brands",
+      "handler": "wines-brands.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wines-brands/count",
+      "handler": "wines-brands.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wines-brands/:id",
+      "handler": "wines-brands.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wines-brands",
+      "handler": "wines-brands.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wines-brands/:id",
+      "handler": "wines-brands.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wines-brands/:id",
+      "handler": "wines-brands.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
