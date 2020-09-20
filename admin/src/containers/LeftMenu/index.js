@@ -158,7 +158,7 @@ const LeftMenu = forwardRef(({ plugins }, ref) => {
             searchable
           />
         )}
-        {/* {singleTypesSectionLinksFiltered.length > 0 && (
+        {singleTypesSectionLinksFiltered.length > 0 && (
           <LeftMenuLinksSection
             section="singleType"
             name="singleType"
@@ -186,7 +186,7 @@ const LeftMenu = forwardRef(({ plugins }, ref) => {
             location={location}
             searchable={false}
           />
-        )} */}
+        )}
       </LinksContainer>
       <LeftMenuFooter key="footer" />
     </Wrapper>
