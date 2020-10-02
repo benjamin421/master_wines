@@ -45,9 +45,6 @@
     "tasting_food_notes": {
       "type": "text"
     },
-    "fact_sheet": {
-      "type": "text"
-    },
     "shelf_talkers": {
       "type": "text"
     },
@@ -58,11 +55,21 @@
       "type": "string"
     },
     "wines_brand": {
-      "model": "wines-brands",
-      "via": "wines"
+      "via": "wines",
+      "model": "wines-brands"
     },
     "slug": {
       "type": "string"
+    },
+    "fact_sheet": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

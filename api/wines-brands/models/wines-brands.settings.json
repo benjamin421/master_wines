@@ -14,7 +14,7 @@
       "required": true
     },
     "images": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
@@ -27,8 +27,8 @@
       "required": true
     },
     "wines": {
-      "via": "wines_brand",
-      "collection": "wines"
+      "collection": "wines",
+      "via": "wines_brand"
     },
     "slug": {
       "type": "string"
